@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ToDo App</title>
+    <!--  -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+ 
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body>
+    <div class="containerx text-muted">
+      <div class="main">
+        <!--  -->
+        <div class="listDiv p-3" id="toDos">
+        </div>
+        <!--  -->
+        <div class="formDiv p-2 bg-light">
+          <h1 class="m-2 d-flex justify-content-center">ToDos</h1>
+          <form action="#" class="border-0 form-group shadow-lg rounded" id="myForm">
+            <div class="input-group">
+              <div class="form-floating">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="inputData"
+                  placeholder="Enter todo"
+                  name="todo"
+                />
+                <label for="todo">Your Todo</label>
+              </div>
+              <input class="btn btn-success" type="SUBMIT"></input>
+            </div>
+          </form>
+          <h1 class="m-3" id="maxTodos">
+            0 Todos
+          </h1>
+        </div>
+        <!--  -->
+      </div>
+    </div>
+    <script type="module" src="./js/main.js"></script>
+  </body>
+</html>
